@@ -1,0 +1,70 @@
+<mvc:View controllerName="com.dpz_DemoTask3.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title = "{i18n>title}">
+				<content>
+					<f:SimpleForm 
+					id="firstSimpleform" 
+					title="Student Form"
+					layout="ResponsiveGridLayout" 
+					editable="true" 
+					columnsXL="6"
+					columnsL="6"
+					columnsM="6"
+					emptySpanXL="5"
+					emptySpanL="5" 
+					emptySpanM="5" 
+					emptySpanS="5" 
+					labelSpanXL="5" 
+					labelSpanL="5"
+					labelSpanM="5"
+					labelSpanS="5"
+					singleContainerFullSize="true">
+						<f:content>
+							<Label text="Id"></Label>
+							<Input id="inputFieldId"></Input>
+							<Label text="Name"></Label>
+							<Input id="inputNameFieldId"></Input>
+						</f:content>
+					</f:SimpleForm>
+					<HBox justifyContent="Center">
+						<Button text="Submit" press="onSubmit" type="Emphasized"></Button>
+					</HBox>
+				
+					<Table items="{employModel>/EmployData}" id="selectTableId" mode="MultiSelect">
+					<headerToolbar>
+						<Toolbar>
+						<ToolbarSpacer></ToolbarSpacer>
+						<Button icon = "sap-icon://delete" press="onDelete"></Button>
+						</Toolbar>
+						
+					</headerToolbar>
+						<columns>
+						<Column>
+						<Text text="Id"></Text>
+						</Column>
+						<Column>
+							<Text text="Name"></Text>
+						</Column>
+						</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<Text id="studentTableId" text="{employModel>Id}"></Text>
+								<Text id ="studetTableNameId" text="{employModel>Name}"></Text>
+							</cells>
+							<!--<cells>-->
+							<!--	<Text id=""></Text>-->
+							<!--	<Text id=""></Text>-->
+								
+							<!--</cells>-->
+						</ColumnListItem>
+						</items>
+						</Table>
+							</content>	
+							
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

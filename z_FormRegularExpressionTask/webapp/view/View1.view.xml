@@ -1,0 +1,50 @@
+<mvc:View controllerName="com.dpz_FormRegularExpressionTask.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+						<f:SimpleForm 
+					id="firstSimpleform" 
+					title="Student Form"
+					layout="ResponsiveGridLayout" 
+					editable="true" 
+					columnsXL="6"
+					columnsL="6"
+					columnsM="6"
+					emptySpanXL="5"
+					emptySpanL="5" 
+					emptySpanM="5" 
+					emptySpanS="5" 
+					labelSpanXL="5" 
+					labelSpanL="5"
+					labelSpanM="5"
+					labelSpanS="5"
+					singleContainerFullSize="true">
+							<f:content>
+							<Label text="Name"></Label>
+							<Input id="inputNameFieldId"></Input>
+							<Label text="Age"></Label>
+							<Input id="inputAgeFieldId"></Input>
+							<Label text="Phone Number"></Label>
+							<Input id="inputPhNoFieldId"></Input>
+							<Label text="Email"></Label>
+							<Input id="inputEmailFieldId"></Input>
+							<Label text="Debitcard Number"></Label>
+							<Input id="inputDebitcardFieldId"></Input>
+							<Label text="Expiry Data"></Label>
+							<Input id="inputExpiryDateFieldId"></Input>
+							<Label text="Cvv"></Label>
+							<Input id="inputCvvFielsId"></Input>
+							<Label text="PANcard"></Label>
+							<Input id="inputPancardFieldId"></Input>
+						</f:content>
+					</f:SimpleForm>
+						<HBox justifyContent="Center">
+						<Button text="Submit" press="onSubmit" type="Emphasized"></Button>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

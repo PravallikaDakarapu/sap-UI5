@@ -1,0 +1,58 @@
+<mvc:View controllerName="cmd.dpz_sampleTasks.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns:f ="sap.ui.layout.form" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Title text = "Login Page"></Title>
+					<Label text = "UserName"></Label>
+					<Input placeholder = "Enter Username"></Input>
+					<Label text = "PassWord"></Label>
+					<Input placeholder = "Enter Password" ></Input>
+					<Button text="Submit"   ></Button>
+					<f:SimpleForm 
+					title = "Login"
+					layout = "ResponsiveGridLayout"
+					editable="true" 
+				
+					columnsXL = "6"
+					columnsL = "6"
+				    columnsM = "6"
+				 
+					emptySpanXL = "5"
+					emptySpanL = "5"
+					emptySpanM = "5"
+					emptySpanS = "5" 
+					
+					labelSpanXL = "5"
+					labelSpanL = "5"
+					labelSpanM = "5"
+					labelSpanS = "5"
+					singleContainerFullSize = "true"
+				
+					>
+						
+					<Label text = "UserName" design="Standard"></Label>
+					<Input placeholder = "Enter Username"></Input>
+					<Label text = "PassWord"> </Label>
+					<Input type = "Password" placeholder = "Enter Password"  ></Input>
+				
+					</f:SimpleForm>
+					<HBox  justifyContent="Center">
+					<Button text="Submit" enabled = "true" type="Emphasized" press="onSubmit"
+					></Button>
+					</HBox >
+					
+					
+				<!--<f::SimpleForm id = "SimpleFormId"-->
+				<!--	title="Login"-->
+				<!--	editable=true-->
+				<!--	columnsS = "1">-->
+					
+				<!--</f:SimpleForm>-->
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

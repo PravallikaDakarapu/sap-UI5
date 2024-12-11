@@ -1,0 +1,31 @@
+<mvc:View controllerName="com.dpz_Sample.controller.sample" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns:f ="sap.ui.layout.form" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				<f:Simpleform 
+					title = "Student Form"
+					layout = "ResponsiveGridLayout"
+					editable="true" 
+					>
+					<Lable text="Name" ></Lable>
+					<Input placeholder="Enter Name"></Input>
+					<Lable text="Id"></Lable>
+					<Input placeholder="Enter Id "></Input>
+					<Label text="Telephone Number"></Label>
+					<Input placeholder="Enter mobile number"></Input>
+					<Label text="Mail Id"></Label>
+					<Input placeholder="Enter mail id"></Input>
+						
+						
+						
+						
+					</f:Simpleform>
+				 
+				
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

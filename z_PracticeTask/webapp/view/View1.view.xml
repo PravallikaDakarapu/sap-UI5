@@ -1,0 +1,46 @@
+<mvc:View controllerName="com.dpz_PracticeTask.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm
+					id="listOfItemsId"
+					title = "Items List"
+					layout = "ResponsiveGridLayout"
+					columnsXL="5"
+					columnsL="5"
+					columnsM="5"
+					
+					emptySpanL="5"
+					emptySpanXL="5"
+					emptySpanM="5"
+					emptySpanS="5"
+					
+					labelSpanL="5"
+					labelSpanXL="5"
+					labelSpanM="5"
+					labelSpanS="5"
+					editable="true">
+					
+					<f:content>
+					<Label text="Items" ></Label>
+					<Input id="listitemsId"></Input>
+					<Label text="Quantity"></Label>
+					<Input id="listitemsNameId" ></Input>
+						
+					</f:content>
+					</f:SimpleForm>
+					<HBox justifyContent="Center">
+						<Button text="Submit" press="onSubmit" type="Emphasized"></Button>
+					</HBox>
+					
+					
+					
+					
+		
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,41 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.dpz_DemoFormTask.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Title" navButtonPress="onBack" showNavButton="true" navButtonTooltip="Back">
+				<content>
+					<Toolbar >
+						
+					</Toolbar>
+					<!--<Button text="Back" type="Emphasized" press="onBack"></Button>-->
+					<Table items="{studentModel>/FormData}" mode="MultiSelect" alternateRowColors="true" selectionChange="onSelectStudentForm" id="studentTableId"
+					>
+						<headerToolbar>
+							<Toolbar>
+							<ToolbarSpacer/>
+								<Button icon="sap-icon://delete" press="onRemoveRow"/>
+							
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="Student ID"></Text>
+							</Column>
+							<Column>
+								<Text text="Student Name"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells >
+									<Text id="studentFormId" text="{studentModel>Id}"></Text>
+									<Text id="studentFormNameId" text="{studentModel>Name}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

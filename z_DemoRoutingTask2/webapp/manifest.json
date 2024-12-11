@@ -1,0 +1,142 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "com.dpz_DemoRoutingTask2",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+
+		]
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.dpz_DemoRoutingTask2.view.app",
+			"type": "XML"
+		
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.dpz_DemoRoutingTask2.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing":{
+			"config":{
+				"routerClass":"sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath":"com.dpz_DemoRoutingTask2.view",
+				"controlAggregation": "pages",
+				"controlId":"appId",
+				"transition":"slide"
+		
+			},
+			"routes":[{
+				"name":"View1",
+				"target":["View1"],
+				"pattern":""
+			},
+			{
+				"name":"View2",
+				"target":["View2"],
+				"pattern":"View2"
+				
+			},
+			{
+				"name":"View3",
+				"target":["View3"],
+				"pattern":"View3"
+				
+			}
+			],
+			"targets":{
+				"View1":{
+					"viewName":"View1",
+					"viewType":"XML",
+					"controlId":"appId",
+					"transition":"slide",
+					"controlAggregation":"pages",
+					"clearAggregation": true
+				
+				},
+				"View2":{
+					"viewName":"View2",
+					"viewType":"XML",
+					"controlId":"appId",
+					"controlAggregation":"pages",
+					"transition":"slide",
+					"clearAggregation":true
+			
+				},
+				
+					"View3":{
+					"viewName":"View3",
+					"viewType":"XML",
+					"controlId":"appId",
+					"controlAggregation":"pages",
+					"transition":"slide",
+					"clearAggregation":true	
+				
+					
+					
+				}
+				
+			}
+			
+			
+			
+			
+		}
+	}
+}
