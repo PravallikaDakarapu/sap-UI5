@@ -1,0 +1,49 @@
+<mvc:View controllerName="com.dpz_SimpleForm2.controller.SimpleForm2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"  xmlns:f="sap.ui.layout.form" xmlns="sap.m" >
+	<App>
+		<Pages>
+			<Page title="{i18n>title}">
+				<content>
+				<f:SimpleForm 
+					
+					title ="Employee Form"
+				
+					layout ="ResponsiveGridLayout"
+					editable= "true"
+			    	columnsXL = "6"
+					columnsL = "6"
+				    columnsM = "6"
+					emptySpanXL = "5"
+					emptySpanL = "5"
+					emptySpanM = "5"
+					emptySpanS = "5" 
+					
+					labelSpanXL = "5"
+					labelSpanL = "5"
+					labelSpanM = "5"
+					labelSpanS = "5"
+					singleContainerFullSize = "true">
+					
+						<f:content>
+							
+					<Label text=" Employee Name" ></Label>
+					<Input id="employeeNameId" placeholder="Enter Name"></Input>
+					<Label text="Employee Id"></Label>
+					<Input id="employeeId" placeholder="Enter Id "></Input>
+					<Label text="Employee Telephone Number"></Label>
+					<Input id="employeePhoneNumberId"  placeholder="Enter mobile number"></Input>
+					<Label text="Employee Mail Id"></Label>
+					<Input id="employeeEmailId" placeholder="Enter mail id"></Input>
+					</f:content>
+					</f:SimpleForm>
+					
+					
+					
+					
+					
+					
+				</content>
+			</Page>
+		</Pages>
+	</App>
+	</mvc:View>

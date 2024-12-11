@@ -1,0 +1,82 @@
+<mvc:View controllerName="com.dpz_SimpleForm2.controller.SimpleForm2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"  xmlns:f="sap.ui.layout.form" xmlns="sap.m" >
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm 
+					id="firstSimpleform"
+					title ="Student Form"
+					
+					layout ="ResponsiveGridLayout"
+					editable= "true"
+			    	columnsXL = "6"
+					columnsL = "6"
+				    columnsM = "6"
+					emptySpanXL = "5"
+					emptySpanL = "5"
+					emptySpanM = "5"
+					emptySpanS = "5" 
+					
+					labelSpanXL = "5"
+					labelSpanL = "5"
+					labelSpanM = "5"
+					labelSpanS = "5"
+					singleContainerFullSize = "true">
+					
+						<f:content>
+							
+					<Label text="Name" ></Label>
+					<Input id="studentNameId" placeholder="Enter Name"></Input>
+					<Label text="Id"></Label>
+					<Input id="studentId" placeholder="Enter Id "></Input>
+					<Label text="Telephone Number"></Label>
+					<Input id="studentPhoneNumberId"  placeholder="Enter mobile number"></Input>
+					<Label text="Mail Id"></Label>
+					<Input id="studentEmailId" placeholder="Enter mail id"></Input>
+					</f:content>
+					</f:SimpleForm>
+					<HBox  justifyContent="Center">
+					<Button text="Submit" enabled = "true" id="submit_Btn" type="Emphasized" press = "onToView2"
+					></Button>
+					</HBox >
+					
+					<f:SimpleForm 
+					id="secondFormId"
+					title ="Student Details"
+					layout ="ResponsiveGridLayout"
+					editable= "true"
+			    	columnsXL = "6"
+					columnsL = "6"
+				    columnsM = "6"
+				 
+					emptySpanXL = "5"
+					emptySpanL = "5"
+					emptySpanM = "5"
+					emptySpanS = "5" 
+					
+					labelSpanXL = "5"
+					labelSpanL = "5"
+					labelSpanM = "5"
+					labelSpanS = "5"
+				
+				
+				>
+						<f:content >
+					<Label text = "Name"></Label>
+					<Text id ="studentNameFieldId"></Text>
+					<Label text="Id"></Label>
+					<Text id ="studentIdNumFieldId"></Text>
+					<Label text="Telephone Number"></Label>
+					<Text id = "studentPhoneNumberFieldId"></Text>
+					<Label text="Mail Id"></Label>	
+					<Text id ="studentEmailFieldId"></Text>
+					</f:content>
+					</f:SimpleForm>
+					
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
